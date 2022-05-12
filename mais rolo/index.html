@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="estilo.css"/>
+
+    <title>Avaliação</title>
+
+</head>
+<body>
+
+    <div class="menu">
+
+        <h1></h1>
+        <button onclick="mostraModal();">Postar notícia</button>
+
+    </div> 
+        
+       <div class="titulo">
+    
+    <h1>Avaiação do Conradito</h1>
+    <p>Saiba tudo sobre tecnologia</p>
+
+    </div>
+
+    <hr>
+
+    <div class="cards">
+        <div class="card">
+            <img width="400" src="https://i0.wp.com/planejadorweb.com.br/wp-content/uploads/2022/03/Como-redirigir-o-redireccionar-a-otra-pagina-web-en-HTML-professor-falken.com.jpg"/>
+            <h1>HTML</h1>
+            <p> O HTML é o esqueleto das paginas da web. </p>
+            <button>Saiba mais</button>
+        </div>
+
+        <div class="card">
+            <img width= "400" height="270" src="https://ayltoninacio.com.br/img/p/53w750.jpg"/>
+            <h1>CSS</h1>
+            <p> O CSS é a parte que deixa o html mais bonitinho. </p>
+            <button>Saiba mais</button>
+        </div>
+
+        <div class="card">
+            <img width="400" src="https://rockcontent.com/br/wp-content/uploads/sites/2/2020/04/Javascript.png"/>
+            <h1>JavaScript (JS)</h1>
+            <p>O JavaScript é a parte que da funcionalidade aos botões e outras coisas do HTML e CSS. </p>
+            <button>Saiba mais</button>
+        </div>
+    </div>
+
+    <hr>
+
+    <div CLASS="salada">
+        <h1>Notícias Rápidas</h1>
+        <p>Essas são as notícias escritas pelos nossos leitores</p>
+    </div>
+
+
+    <div id="noticiaCadastrada"></div>
+
+    <div class="rodape">
+    <div >   
+        <h2>Seja um de nossos escritores</h2>
+        <p>Gostaria de ser um escritor do nosso blog?</p>
+
+
+        <p>Envie um e-mail para: </p>
+        <b>Blablabla@gmail.com</b>
+    </div> 
+
+    
+    <div >
+        <h2>Escritores</h2>
+        <p>Conheça nossos escritores:</p>
+    </div>
+    </div>
+
+    <div class="modal">
+        <input  placeholder="Informe seu nome"/>
+        <p>Escreva sua noticia</p>
+        <input id="inputNoticia" placeholder="Escreva a notícia aqui"/>
+
+        <div>
+            <button onclick="cadastraNoticia()">Cadastrar</button>
+            <button onclick="escondeModal()">voltar</button>
+        </div>
+    </div>
+    <div class="fundo"  onclick="escondeModal()"></div>
+
+<script src="script.js"></script>    
+</body>
+</html>
